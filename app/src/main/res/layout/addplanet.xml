@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddplanetFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etNameAddPlanet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="77dp"
+            android:layout_marginBottom="33dp"
+            android:ems="10"
+            android:hint="name..."
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/etSizeAddPlanet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etSizeAddPlanet"
+            android:layout_width="204dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginBottom="37dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="size..."
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toTopOf="@+id/etOrbitAddPlanet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/etNameAddPlanet"
+            app:layout_constraintTop_toBottomOf="@+id/etNameAddPlanet" />
+
+        <EditText
+            android:id="@+id/etOrbitAddPlanet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="32dp"
+            android:ems="10"
+            android:hint="Orbit..."
+            android:inputType="text|textPostalAddress"
+            app:layout_constraintBottom_toTopOf="@+id/etNumberOfPoepleAddPlanet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/etSizeAddPlanet"
+            app:layout_constraintTop_toBottomOf="@+id/etSizeAddPlanet" />
+
+        <EditText
+            android:id="@+id/etNumberOfPoepleAddPlanet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="68dp"
+            android:ems="10"
+            android:hint="NumberOfPeople..."
+            android:inputType="phone"
+            app:layout_constraintBottom_toTopOf="@+id/btnAddAddRestaurantFragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/etOrbitAddPlanet"
+            app:layout_constraintTop_toBottomOf="@+id/etOrbitAddPlanet" />
+
+        <Button
+            android:id="@+id/btnAddAddRestaurantFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="249dp"
+            android:text="Add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNumberOfPoepleAddPlanet" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/emailsignupbenefactor"
+            android:layout_width="235dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="272dp"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/passsignup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.414"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/passsignup"
+            android:layout_width="235dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="320dp"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="numberPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.414"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/loginbtn_signup"
+            android:layout_width="111dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginEnd="152dp"
+            android:layout_marginBottom="64dp"
+            android:backgroundTint="@color/black"
+            android:text="login"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passsignup"
+            app:layout_constraintVertical_bias="0.153" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
